@@ -50,8 +50,6 @@ The project was designed to answer core business questions across the full custo
 5. Customer Satisfaction
 6. Customer Journey
 
-Dashboard screenshots are available in `docs/dashboard\_screenshots/`.
-
 ## Tech Stack
 
 * Python
