@@ -10,36 +10,36 @@ The project was designed to answer core business questions across the full custo
 
 ## Project Objectives
 
-* Build a realistic CRM analytics data model aligned to Salesforce object logic
-* Simulate end-to-end customer journey data with behavioral patterns and seasonality
-* Create a transformation layer using dbt on DuckDB
-* Deliver a 6-page Power BI dashboard for sales, service, campaigns, customer satisfaction, and customer journey analysis
+- Build a realistic CRM analytics data model aligned to Salesforce object logic
+- Simulate end-to-end customer journey data with behavioral patterns and seasonality
+- Create a transformation layer using dbt on DuckDB
+- Deliver a 6-page Power BI dashboard for sales, service, campaigns, customer satisfaction, and customer journey analysis
 
 ## Dashboard Preview
 
 ### Executive Overview
 
-!\[Executive Overview](docs/dashboard\_screenshots/page1\_executive.png)
+![Executive Overview](docs/dashboard_screenshots/page1_executive.png)
 
 ### Sales Funnel
 
-!\[Sales Funnel](docs/dashboard\_screenshots/page2\_sales\_funnel.png)
+![Sales Funnel](docs/dashboard_screenshots/page2_sales_funnel.png)
 
 ### Aftersales Service
 
-!\[Aftersales Service](docs/dashboard\_screenshots/page3\_aftersales.png)
+![Aftersales Service](docs/dashboard_screenshots/page3_aftersales.png)
 
 ### Campaign Performance
 
-!\[Campaign Performance](docs/dashboard\_screenshots/page4\_campaign.png)
+![Campaign Performance](docs/dashboard_screenshots/page4_campaign.png)
 
 ### Customer Satisfaction
 
-!\[Customer Satisfaction](docs/dashboard\_screenshots/page5\_satisfaction.png)
+![Customer Satisfaction](docs/dashboard_screenshots/page5_satisfaction.png)
 
 ### Customer Journey
 
-!\[Customer Journey](docs/dashboard\_screenshots/page6\_customer\_journey.png)
+![Customer Journey](docs/dashboard_screenshots/page6_customer_journey.png)
 
 ## Dashboard Pages
 
@@ -52,12 +52,12 @@ The project was designed to answer core business questions across the full custo
 
 ## Tech Stack
 
-* Python
-* pandas
-* Faker
-* DuckDB
-* dbt Core
-* Power BI
+- Python
+- pandas
+- Faker
+- DuckDB
+- dbt Core
+- Power BI
 
 ## Data Model
 
@@ -65,16 +65,16 @@ The project uses a star-schema-style analytical model with one bridge table for 
 
 Core tables:
 
-* Dimensions: date, dealer, vehicle, contact, campaign, account
-* Facts: leads, opportunities, orders, service cases, customer feedback
-* Bridge: lead-campaign
+- Dimensions: date, dealer, vehicle, contact, campaign, account
+- Facts: leads, opportunities, orders, service cases, customer feedback
+- Bridge: lead-campaign
 
-!\[ERD](docs/data\_model/erd\_diagram.png)
+![ERD](docs/data_model/erd_diagram.png)
 
 See:
 
-* `docs/data\_model/erd\_diagram.png`
-* `docs/data\_model/erd\_diagram.md`
+- `docs/data_model/erd_diagram.png`
+- `docs/data_model/erd_diagram.md`
 
 ## KPI Framework
 
@@ -82,7 +82,7 @@ A dedicated KPI dictionary documents KPI definitions, formulas, grain, source ta
 
 See:
 
-* `KPI\_DICTIONARY.md`
+- `KPI_DICTIONARY.md`
 
 ## Architecture
 
@@ -90,18 +90,18 @@ Pipeline flow:
 
 Python synthetic data generation -> Raw CSV files -> DuckDB raw tables -> dbt staging models -> dbt mart models -> Power BI dashboard
 
-!\[Architecture Diagram](docs/architecture/architecture\_diagram.png)
+![Architecture Diagram](docs/architecture/architecture_diagram.png)
 
 See:
 
-* `docs/architecture/architecture\_diagram.png`
-* `docs/architecture/architecture\_diagram.md`
+- `docs/architecture/architecture_diagram.png`
+- `docs/architecture/architecture_diagram.md`
 
 ## Salesforce Alignment
 
 This project is structurally aligned to Salesforce-style CRM objects such as Lead, Opportunity, Account, Contact, Case, Campaign, and CampaignMember. The analytical implementation is completed outside Salesforce in Python, DuckDB, dbt, and Power BI. This repository is designed to demonstrate CRM data-model understanding and analytical workflow, not production Salesforce administration or CRM Analytics delivery.
 
-A dedicated Salesforce reference section is included in `docs/salesforce\_reference/`.
+A dedicated Salesforce reference section is included in `docs/salesforce_reference/`.
 
 ## Project Structure
 
@@ -109,42 +109,10 @@ A dedicated Salesforce reference section is included in `docs/salesforce\_refere
 autovantage-crm-analytics/
 ├── README.md
 ├── ASSUMPTIONS.md
-├── KPI\_DICTIONARY.md
+├── KPI_DICTIONARY.md
 ├── requirements.txt
-├── data\_generation/
-├── dbt\_project/
+├── data_generation/
+├── dbt_project/
 ├── dashboards/
 ├── docs/
 └── sql/
-```
-
-## How to Run
-
-```bash
-python -m venv .venv
-.venv\\Scripts\\activate
-pip install -r requirements.txt
-python data\_generation/generate.py
-python sql/load\_raw\_to\_duckdb.py
-cd dbt\_project
-dbt run
-dbt test
-```
-
-## Assumptions and Limitations
-
-* All data in this project is synthetic.
-* The business scenario is fictional but designed to reflect realistic CRM behavior.
-* Salesforce is represented structurally, not as a production environment.
-* Row counts were adjusted during development in some tables to improve analytical coverage and distribution stability.
-
-See:
-
-* `ASSUMPTIONS.md`
-
-## Author
-
-Hamed Fallah  
-LinkedIn: https://www.linkedin.com/in/soccerwave/  
-GitHub: GitHub: https://github.com//soccerwave
-
