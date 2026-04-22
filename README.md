@@ -116,3 +116,34 @@ autovantage-crm-analytics/
 ├── dashboards/
 ├── docs/
 └── sql/
+```
+
+## How to Run
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+python data_generation/generate.py
+python sql/load_raw_to_duckdb.py
+cd dbt_project
+dbt run
+dbt test
+```
+
+## Assumptions and Limitations
+
+- All data in this project is synthetic.
+- The business scenario is fictional but designed to reflect realistic CRM behavior.
+- Salesforce is represented structurally, not as a production environment.
+- Row counts were adjusted during development in some tables to improve analytical coverage and distribution stability.
+
+See:
+
+- `ASSUMPTIONS.md`
+
+## Author
+
+Hamed Fallah  
+LinkedIn: https://www.linkedin.com/in/soccerwave/  
+GitHub: https://github.com/soccerwave
