@@ -1,0 +1,46 @@
+vehicle_key,vehicle_id,brand,model_name,segment,list_price_eur
+1,VHL-001,Toyota,Yaris,Mass Market,18000
+2,VHL-002,Toyota,Corolla,Mass Market,22000
+3,VHL-003,Toyota,Corolla Hybrid,Mass Market,26000
+4,VHL-004,Toyota,Camry,Mass Market,32000
+5,VHL-005,Toyota,C-HR,Mass Market,30000
+6,VHL-006,Toyota,RAV4,Mass Market,36000
+7,VHL-007,Toyota,RAV4 Hybrid,Mass Market,39000
+8,VHL-008,Toyota,Highlander,Mass Market,52000
+9,VHL-009,Toyota,Prius,Mass Market,35000
+10,VHL-010,Toyota,Aygo,Mass Market,17000
+11,VHL-011,Toyota,Hilux,Mass Market,34000
+12,VHL-012,Toyota,Land Cruiser,Mass Market,70000
+13,VHL-013,Toyota,Yaris Cross,Mass Market,28000
+14,VHL-014,Toyota,Corolla Cross,Mass Market,33000
+15,VHL-015,Toyota,bZ4X,Mass Market,48000
+16,VHL-016,Volkswagen,Polo,Mass Market,19000
+17,VHL-017,Volkswagen,Golf,Mass Market,27000
+18,VHL-018,Volkswagen,Golf GTI,Mass Market,35000
+19,VHL-019,Volkswagen,T-Roc,Mass Market,29000
+20,VHL-020,Volkswagen,T-Cross,Mass Market,25000
+21,VHL-021,Volkswagen,Tiguan,Mass Market,38000
+22,VHL-022,Volkswagen,Passat,Mass Market,41000
+23,VHL-023,Volkswagen,Arteon,Mass Market,52000
+24,VHL-024,Volkswagen,Taigo,Mass Market,24000
+25,VHL-025,Volkswagen,Touareg,Mass Market,69000
+26,VHL-026,Volkswagen,ID.3,Mass Market,43000
+27,VHL-027,Volkswagen,ID.4,Mass Market,47000
+28,VHL-028,Volkswagen,ID.5,Mass Market,51000
+29,VHL-029,Volkswagen,Touran,Mass Market,37000
+30,VHL-030,Volkswagen,Caddy,Mass Market,31000
+31,VHL-031,Volkswagen,Amarok,Mass Market,45000
+32,VHL-032,Volkswagen,Multivan,Mass Market,58000
+33,VHL-033,Volkswagen,Jetta,Mass Market,28000
+34,VHL-034,Volkswagen,Sharan,Mass Market,40000
+35,VHL-035,Volkswagen,Up,Mass Market,16000
+36,VHL-036,BMW,1 Series,Premium,39000
+37,VHL-037,BMW,2 Series,Premium,45000
+38,VHL-038,BMW,3 Series,Premium,52000
+39,VHL-039,BMW,4 Series,Premium,58000
+40,VHL-040,BMW,5 Series,Premium,68000
+41,VHL-041,BMW,X1,Premium,48000
+42,VHL-042,BMW,X3,Premium,62000
+43,VHL-043,BMW,X5,Premium,82000
+44,VHL-044,BMW,i4,Premium,71000
+45,VHL-045,BMW,iX,Premium,85000

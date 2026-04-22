@@ -1,0 +1,72 @@
+version: 2
+
+models:
+  - name: stg_leads
+    columns:
+      - name: lead_id
+        tests: [not_null, unique]
+      - name: dealer_id
+        tests: [not_null]
+      - name: contact_id
+        tests: [not_null]
+      - name: vehicle_id
+        tests: [not_null]
+
+  - name: stg_opportunities
+    columns:
+      - name: opportunity_id
+        tests: [not_null, unique]
+      - name: account_id
+        tests: [not_null]
+      - name: contact_id
+        tests: [not_null]
+      - name: vehicle_id
+        tests: [not_null]
+
+  - name: stg_service_cases
+    columns:
+      - name: case_id
+        tests: [not_null, unique]
+      - name: dealer_id
+        tests: [not_null]
+      - name: contact_id
+        tests: [not_null]
+      - name: vehicle_id
+        tests: [not_null]
+
+  - name: stg_customer_feedback
+    columns:
+      - name: feedback_id
+        tests: [not_null, unique]
+      - name: case_id
+        tests: [not_null, unique]
+      - name: csat_score
+        tests: [not_null]
+      - name: nps_score
+        tests: [not_null]
+
+  - name: fct_sales_funnel
+    columns:
+      - name: lead_source
+        tests: [not_null]
+      - name: region
+        tests: [not_null]
+
+  - name: fct_pipeline
+    columns:
+      - name: opportunity_id
+        tests: [not_null, unique]
+      - name: stage
+        tests: [not_null]
+
+  - name: fct_case_resolution
+    columns:
+      - name: case_id
+        tests: [not_null, unique]
+      - name: priority
+        tests: [not_null]
+
+  - name: fct_campaign_attribution
+    columns:
+      - name: campaign_id
+        tests: [not_null, unique]

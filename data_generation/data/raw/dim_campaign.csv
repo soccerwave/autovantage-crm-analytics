@@ -1,0 +1,31 @@
+campaign_key,campaign_id,campaign_name,campaign_type,budget_eur,status,channel_group
+1,CMP-001,Email Campaign 1,Email,15476,Planned,Digital
+2,CMP-002,Email Campaign 2,Email,5409,Completed,Digital
+3,CMP-003,Email Campaign 3,Email,9506,Planned,Digital
+4,CMP-004,Email Campaign 4,Email,8657,Planned,Digital
+5,CMP-005,Email Campaign 5,Email,17066,Planned,Digital
+6,CMP-006,Email Campaign 6,Email,16087,Completed,Digital
+7,CMP-007,Email Campaign 7,Email,13935,Planned,Digital
+8,CMP-008,Email Campaign 8,Email,14674,Active,Digital
+9,CMP-009,Email Campaign 9,Email,5520,Planned,Digital
+10,CMP-010,Email Campaign 10,Email,6535,Planned,Digital
+11,CMP-011,Email Campaign 11,Email,8811,Completed,Digital
+12,CMP-012,Email Campaign 12,Email,14863,Planned,Digital
+13,CMP-013,Email Campaign 13,Email,14195,Planned,Digital
+14,CMP-014,Email Campaign 14,Email,16731,Completed,Digital
+15,CMP-015,Email Campaign 15,Email,16490,Completed,Digital
+16,CMP-016,Social Campaign 16,Social,25746,Planned,Digital
+17,CMP-017,Social Campaign 17,Social,26719,Completed,Digital
+18,CMP-018,Social Campaign 18,Social,21115,Planned,Digital
+19,CMP-019,Social Campaign 19,Social,17231,Completed,Digital
+20,CMP-020,Social Campaign 20,Social,25848,Active,Digital
+21,CMP-021,Social Campaign 21,Social,21105,Planned,Digital
+22,CMP-022,Social Campaign 22,Social,19055,Active,Digital
+23,CMP-023,Social Campaign 23,Social,15349,Planned,Digital
+24,CMP-024,Event Campaign 24,Event,69898,Planned,Offline
+25,CMP-025,Event Campaign 25,Event,68526,Active,Offline
+26,CMP-026,Event Campaign 26,Event,62335,Planned,Offline
+27,CMP-027,Event Campaign 27,Event,75108,Completed,Offline
+28,CMP-028,Paid Search Campaign 28,Paid Search,24090,Active,Digital
+29,CMP-029,Paid Search Campaign 29,Paid Search,22582,Completed,Digital
+30,CMP-030,Paid Search Campaign 30,Paid Search,29606,Completed,Digital

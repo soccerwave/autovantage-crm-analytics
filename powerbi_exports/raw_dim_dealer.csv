@@ -1,0 +1,13 @@
+dealer_key,dealer_id,dealer_name,region,brand
+1,DLR-01,North Star Toyota,North,Toyota
+2,DLR-02,North Drive Volkswagen,North,Volkswagen
+3,DLR-03,North Elite BMW,North,BMW
+4,DLR-04,South Coast Toyota,South,Toyota
+5,DLR-05,South Motors Volkswagen,South,Volkswagen
+6,DLR-06,South Premium BMW,South,BMW
+7,DLR-07,East Point Toyota,East,Toyota
+8,DLR-08,East Line Volkswagen,East,Volkswagen
+9,DLR-09,East Gate Toyota,East,Toyota
+10,DLR-10,West Auto Volkswagen,West,Volkswagen
+11,DLR-11,West Highway Toyota,West,Toyota
+12,DLR-12,West Grand Volkswagen,West,Volkswagen
