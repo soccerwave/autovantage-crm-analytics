@@ -15,6 +15,32 @@ The project was designed to answer core business questions across the full custo
 * Create a transformation layer using dbt on DuckDB
 * Deliver a 6-page Power BI dashboard for sales, service, campaigns, customer satisfaction, and customer journey analysis
 
+## Dashboard Preview
+
+### Executive Overview
+
+!\[Executive Overview](docs/dashboard\_screenshots/page1\_executive.png)
+
+### Sales Funnel
+
+!\[Sales Funnel](docs/dashboard\_screenshots/page2\_sales\_funnel.png)
+
+### Aftersales Service
+
+!\[Aftersales Service](docs/dashboard\_screenshots/page3\_aftersales.png)
+
+### Campaign Performance
+
+!\[Campaign Performance](docs/dashboard\_screenshots/page4\_campaign.png)
+
+### Customer Satisfaction
+
+!\[Customer Satisfaction](docs/dashboard\_screenshots/page5\_satisfaction.png)
+
+### Customer Journey
+
+!\[Customer Journey](docs/dashboard\_screenshots/page6\_customer\_journey.png)
+
 ## Dashboard Pages
 
 1. Executive Overview
@@ -45,6 +71,8 @@ Core tables:
 * Facts: leads, opportunities, orders, service cases, customer feedback
 * Bridge: lead-campaign
 
+!\[ERD](docs/data\_model/erd\_diagram.png)
+
 See:
 
 * `docs/data\_model/erd\_diagram.png`
@@ -64,6 +92,8 @@ Pipeline flow:
 
 Python synthetic data generation -> Raw CSV files -> DuckDB raw tables -> dbt staging models -> dbt mart models -> Power BI dashboard
 
+!\[Architecture Diagram](docs/architecture/architecture\_diagram.png)
+
 See:
 
 * `docs/architecture/architecture\_diagram.png`
@@ -82,6 +112,7 @@ autovantage-crm-analytics/
 ├── README.md
 ├── ASSUMPTIONS.md
 ├── KPI\_DICTIONARY.md
+├── requirements.txt
 ├── data\_generation/
 ├── dbt\_project/
 ├── dashboards/
@@ -117,5 +148,5 @@ See:
 
 Hamed Fallah  
 LinkedIn: https://www.linkedin.com/in/soccerwave/  
-GitHub: https://github.com//soccerwave
+GitHub: GitHub: https://github.com//soccerwave
 
