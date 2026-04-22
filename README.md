@@ -4,16 +4,31 @@ End-to-end CRM analytics portfolio project for a fictional automotive dealer net
 
 ## Business Context
 
-AutoVantage Group is a fictional regional automotive dealer network operating 12 dealerships across 4 regions. The business sells vehicles across mass-market and premium brands and also manages aftersales service operations. This project simulates an end-to-end CRM analytics environment aligned to Salesforce-style CRM objects, including leads, opportunities, accounts, contacts, campaigns, service cases, and customer feedback.
+AutoVantage Group is a fictional regional automotive dealer network operating 12 dealerships across 4 regions. The network combines vehicle sales and aftersales service operations, which makes CRM performance dependent on the full customer lifecycle rather than on sales alone.
 
-The project was designed to answer core business questions across the full customer lifecycle: where leads are lost in the funnel, which campaigns drive valuable conversions, how service quality affects SLA performance, and how customer satisfaction changes across regions, brands, and case types.
+This project was built to surface operational gaps across that lifecycle: which lead sources convert efficiently, where the sales funnel loses momentum, which service operations fail SLA expectations, and how service quality affects customer satisfaction. In the generated analytical environment, lead conversion varies sharply by source (from about 7.7% for Social Media to about 51.7% for Walk-in leads), and average CSAT is materially lower for SLA-breached cases than for SLA-compliant cases (2.90 vs 4.14). These patterns are intentional and designed to make the analytics layer realistic and defensible.
 
 ## Project Objectives
 
-- Build a realistic CRM analytics data model aligned to Salesforce object logic
-- Simulate end-to-end customer journey data with behavioral patterns and seasonality
-- Create a transformation layer using dbt on DuckDB
-- Deliver a 6-page Power BI dashboard for sales, service, campaigns, customer satisfaction, and customer journey analysis
+- Identify which lead sources, regions, and dealers drive stronger conversion performance
+- Measure pipeline quality and win-rate dynamics across the opportunity funnel
+- Evaluate SLA compliance, resolution performance, and reopen behavior in aftersales service
+- Analyze campaign-attributed lead quality and revenue contribution
+- Connect service quality outcomes to customer satisfaction metrics such as CSAT and NPS
+
+## Data Scale
+
+The final implemented dataset includes:
+
+- 12 dealerships across 4 regions
+- 16,000 leads
+- 5,274 opportunities
+- 2,812 completed orders
+- 11,000 service cases
+- 4,144 customer feedback responses
+- 30 campaigns
+
+All data is synthetic and generated for portfolio purposes.
 
 ## Dashboard Preview
 
@@ -80,6 +95,16 @@ See:
 
 A dedicated KPI dictionary documents KPI definitions, formulas, grain, source tables, and edge cases.
 
+Sample KPI table:
+
+| KPI | Formula | Primary Stakeholder |
+|---|---|---|
+| Total Revenue | SUM(net_revenue_eur) | CCO |
+| Opportunity Win Rate | Closed Won / All Closed Opportunities | Head of Sales |
+| Lead-to-Opportunity Rate | Converted Leads / Total Leads | Sales / CRM Operations |
+| SLA Compliance Rate | SLA Compliant Closed Cases / Closed Service Cases | Head of Aftersales |
+| CSAT Score | AVG(csat_score) | Aftersales / Customer Experience |
+
 See:
 
 - `KPI_DICTIONARY.md`
@@ -141,6 +166,10 @@ dbt test
 See:
 
 - `ASSUMPTIONS.md`
+
+## Target Role
+
+CRM Analyst / Business Intelligence Analyst / Salesforce-aligned Data Analyst
 
 ## Author
 
